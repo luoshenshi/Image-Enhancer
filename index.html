@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Enhancer</title>
+    <!-- ionic -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <!-- ionic -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sec1">
+        <input type="file" id="choose_file" hidden />
+        <h1 id="try_title">Try It!</h1>
+        <ion-button id="button_select_photo">Choose Photo!</ion-button>
+        <!-- <img src="./ZeroTwo.jpeg" width="600" /> -->
+      </div>
+      <div class="sec2">
+        <p>
+          Blur<ion-range
+            type="range"
+            max="15"
+            value="0"
+            step="0.01"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Brightness<ion-range
+            type="range"
+            max="15"
+            value="1"
+            step="0.01"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Contrast<ion-range
+            type="range"
+            max="15"
+            value="1"
+            step="0.01"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Greyscale<ion-range
+            type="range"
+            max="1"
+            value="0"
+            step="0.01"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Hue-Rotate<ion-range
+            type="range"
+            max="360"
+            step="0.01"
+            value="1"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Invert<ion-range
+            type="range"
+            step="1"
+            ticks="true"
+            snaps="true"
+            max="1"
+            value="0"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Opacity<ion-range
+            type="range"
+            max="1"
+            value="1.0"
+            step="0.01"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Saturate<ion-range
+            type="range"
+            max="15"
+            value="1"
+            step="0.01"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <p>
+          Sepia<ion-range
+            type="range"
+            max="1"
+            value="0"
+            step="0.01"
+            class="ranges"
+          ></ion-range>
+        </p>
+        <ion-button id="downimg">Download Image</ion-button>
+      </div>
+    </div>
+  </body>
+</html>

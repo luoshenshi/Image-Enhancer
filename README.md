@@ -15,6 +15,6 @@ To use Image Enhancer, simply clone the repository and open the index.html file 
 ```bash
 git clone https://github.com/luoshenshi/Image-Enhancer.git
 
-cd image-enhancer
+cd Image-Enhancer
 
 ```
